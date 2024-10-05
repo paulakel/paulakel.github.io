@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "Lato";
+  src: url("Lato/Lato-Light.ttf") format("truetype");
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  line-height: 1.5rem;
+  color: rgb(46, 46, 46);
+}
+
+a {
+  color: black;
+}
+
+header {
+  margin: 20px;
+}
+
+h1 {
+  letter-spacing: 2px;
+}
+
+main {
+  max-width: 700px;
+}
+
+.divided {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+img {
+  width: 200px;
+}
+
+.blocksatz {
+  text-align: justify;
+}
