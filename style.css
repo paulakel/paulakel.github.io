@@ -12,10 +12,17 @@ body {
   font-style: normal;
   line-height: 1.5rem;
   color: rgb(46, 46, 46);
+  gap: 20px;
+  font-size: 12.5pt;
 }
 
 a {
   color: black;
+}
+
+a:hover {
+  background-color: black;
+  color: white;
 }
 
 header {
@@ -23,11 +30,15 @@ header {
 }
 
 h1 {
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  font-size: 3rem;
 }
 
 main {
-  max-width: 700px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .divided {
@@ -36,10 +47,30 @@ main {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  .divided {
+    flex-direction: column;
+  }
+
+  .blocksatz {
+    padding: 0 10px;
+  }
+}
+
 img {
-  width: 200px;
+  width: 270px;
 }
 
 .blocksatz {
   text-align: justify;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+section.last {
+  margin-bottom: 40px;
 }
